@@ -23,17 +23,26 @@
         .font-ebgaramond {
             font-family: "EB Garamond", serif;
         }
+
         .font-poppins {
-             font-family: "Poppins", sans-serif;
+            font-family: "Poppins", sans-serif;
         }
+    </style>
+    <!-- custom-color -->
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --primary:#B68C5A;
+        --sm_txt:#707070;
+      }
     </style>
     <title>Justice</title>
 </head>
 
 <body>
     <header class="md:container md:mx-auto ">
-        <nav >
-            <div class="navbar bg-base-100 shadow-sm">
+        <nav>
+            <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -45,39 +54,52 @@
                         </div>
                         <ul tabindex="-1"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <li class="font-poppins font-medium text-base  text-[#707070]"><a>Home</a></li>
+                            <li class="font-poppins font-medium text-base  text-[#707070]"><a>Services</a></li>
+                            <li class="font-poppins font-medium text-base  text-[#707070]"><a>Cases</a></li>
+                            <li class="font-poppins font-medium text-base  text-[#707070]"><a>Blog</a></li>
+                            <li class="font-poppins font-medium text-base  text-[#707070]"><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl font-ebgaramond font-extrabold">Justice</a>
+                    <div class="">
+                        <img src="images/logo.png" class="hidden md:hidden lg:block" alt="">
+                        <h2 class="text-xl font-ebgaramond font-extrabold pl-0 ">Justice</h2>
+                    </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2 bg-base-100 w-40 z-1">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li class="font-poppins font-medium text-base  text-[#707070]"><a>Home</a></li>
+                        <li class="font-poppins font-medium text-base  text-[#707070]"><a>Services</a></li>
+                        <li class="font-poppins font-medium text-base  text-[#707070]"><a>Cases</a></li>
+                        <li class="font-poppins font-medium text-base  text-[#707070]"><a>Blog</a></li>
+                        <li class="font-poppins font-medium text-base  text-[#707070]"><a>Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="btn bg-[#B68C5A]">Free Consultation</a>
                 </div>
             </div>
         </nav>
+
+        <!-- banner -->
+        <div class="mt-10 ">
+            <div class="hero min-h-screen"
+                style="background-image: url(images/banner.png);" class="max-w-full rounded-lg">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-7xl font-bold font-ebgaramond">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 font-poppins text-[#E7E7E7] text-sm">
+                           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                        </p>
+                       <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                          <input type="search" class="bg-white text-[#A0A0A0] w-50  lg:w-90 rounded-lg p-2" name="" id="" placeholder="Search your services">
+                         <button class="btn bg-[#B68C5A] border-0 text-[20px] text-white font-semibold mt-2">Search</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
 
